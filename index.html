@@ -1,384 +1,191 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AgroForte | Futuro Sustentável</title>
-    
-    <!-- Google Fonts: Montserrat (Headings) e Inter (Body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <style>
-        /* --- CSS MODERNO & VARIÁVEIS --- */
-        :root {
-            --color-primary: #2E7D32;       /* Verde Folha */
-            --color-primary-dark: #1B5E20;
-            --color-secondary: #4E342E;    /* Terra/Escuro */
-            --color-accent: #00BFA5;         /* Azul Tech/Ciano */
-            --color-bg: #F8F9FA;             /* Fundo Cinza Claro */
-            --color-white: #FFFFFF;
-            --color-text: #333333;
-            --color-text-light: #666666;
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <i class="fa-solid fa-leaf text-accent"></i> Agro<span class="text-tech">Forte</span>
+            </a>
             
-            --font-heading: 'Montserrat', sans-serif;
-            --font-body: 'Inter', sans-serif;
-            
-            --shadow-card: 0 10px 30px rgba(0,0,0,0.08);
-            --shadow-hover: 0 15px 40px rgba(0,0,0,0.12);
-            --transition: all 0.3s ease;
-        }
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Início</a>
+                <a href="#diferenciais" class="nav-link">Diferenciais</a>
+                <a href="#impacto" class="nav-link">Impacto</a>
+                <a href="#contato" class="btn btn-primary mobile-only">Fale Conosco</a>
+            </nav>
 
-        /* Reset Básico */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+            <div class="nav-actions">
+                <a href="#contato" class="btn btn-primary desktop-only">Contato</a>
+                <button class="hamburger" id="hamburger" aria-label="Abrir Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
 
-        html {
-            scroll-behavior: smooth;
-        }
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <span class="hero-tag">O Futuro do Campo é Tech</span>
+                <h1 class="hero-title">Inovação Inteligente para uma Agricultura <span>Sustentável</span></h1>
+                <p class="hero-subtitle">Conectamos tecnologia de precisão e manejo regenerativo para nutrir o planeta e preservar o amanhã.</p>
+                <div class="hero-cta">
+                    <a href="#diferenciais" class="btn btn-primary btn-lg">Conhecer Soluções</a>
+                    <a href="#impacto" class="btn btn-secondary btn-lg">Ver Impacto</a>
+                </div>
+            </div>
+        </section>
 
-        body {
-            font-family: var(--font-body);
-            color: var(--color-text);
-            background-color: var(--color-bg);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
+        <section id="diferenciais" class="section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">O que fazemos</span>
+                    <h2 class="section-title">Nossos Diferenciais</h2>
+                    <p class="section-subtitle">Soluções integradas que transformam dados em produtividade real e preservação ambiental.</p>
+                </div>
 
-        h1, h2, h3 {
-            font-family: var(--font-heading);
-            color: var(--color-secondary);
-            line-height: 1.2;
-        }
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-satellite-dish"></i>
+                        </div>
+                        <h3 class="card-title">Tecnologia de Precisão</h3>
+                        <p class="card-text">Monitoramento via satélite, IoT e inteligência artificial para otimização de insumos e máxima eficiência da safra.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+                        <h3 class="card-title">Manejo Regenerativo</h3>
+                        <p class="card-text">Práticas biológicas que recuperam a saúde do solo, aumentam a biodiversidade e garantem a resiliência do ecossistema.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-solar-panel"></i>
+                        </div>
+                        <h3 class="card-title">Energia Limpa no Campo</h3>
+                        <p class="card-text">Integração de matrizes solares e biomassa para zerar a pegada de carbono das operações agroindustriais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        a { text-decoration: none; color: inherit; }
-        ul { list-style: none; }
-        img { max-width: 100%; display: block; }
+        <section id="impacto" class="section bg-dark text-white">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag tag-light">Dados em Tempo Real</span>
+                    <h2 class="section-title">Nosso Impacto Sustentável</h2>
+                    <p class="section-subtitle text-gray">A tecnologia aplicada à sustentabilidade gera resultados mensuráveis todos os dias.</p>
+                </div>
 
-        /* --- COMPONENTES REUTILIZÁVEIS --- */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+                <div class="dashboard-grid">
+                    <div class="counter-box">
+                        <div class="counter-icon"><i class="fa-solid fa-droplet"></i></div>
+                        <div class="counter-number" data-target="45">0</div>
+                        <div class="counter-unit">%</div>
+                        <p class="counter-label">Economia de Água Potável</p>
+                    </div>
+                    <div class="counter-box">
+                        <div class="counter-icon"><i class="fa-solid fa-cloud-arrow-down"></i></div>
+                        <div class="counter-number" data-target="1200">0</div>
+                        <div class="counter-unit">Tons</div>
+                        <p class="counter-label">CO₂ Reduzido Anualmente</p>
+                    </div>
+                    <div class="counter-box">
+                        <div class="counter-icon"><i class="fa-solid fa-wheat-awn"></i></div>
+                        <div class="counter-number" data-target="85000">0</div>
+                        <div class="counter-unit">ha</div>
+                        <p class="counter-label">Hectares Monitorados</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        .btn {
-            display: inline-block;
-            padding: 14px 32px;
-            border-radius: 50px;
-            font-weight: 600;
-            font-family: var(--font-heading);
-            cursor: pointer;
-            transition: var(--transition);
-            border: none;
-        }
+        <section id="contato" class="section bg-light">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <span class="section-tag">Conecte-se conosco</span>
+                    <h2 class="section-title">Pronto para liderar a próxima safra?</h2>
+                    <p class="section-subtitle">Fale com nossa equipe de engenheiros agônomos e especialistas em tecnologia para construir um projeto personalizado.</p>
+                    
+                    <div class="info-list">
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>contato@agroforte.tech</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+55 (11) 4003-8900</span>
+                        </div>
+                    </div>
+                </div>
 
-        .btn-primary {
-            background-color: var(--color-accent);
-            color: var(--color-white);
-            box-shadow: 0 4px 15px rgba(0, 191, 165, 0.4);
-        }
+                <div class="contact-card">
+                    <form id="contact-form" autocomplete="off">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" required placeholder="Ex: João Silva">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail Corporativo</label>
+                            <input type="email" id="email" required placeholder="Ex: joao@empresa.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Como podemos ajudar?</label>
+                            <textarea id="message" rows="4" required placeholder="Descreva brevemente seu objetivo no campo..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem <i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        .btn-primary:hover {
-            background-color: #008e76;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(0, 191, 165, 0.6);
-        }
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="logo text-white">
+                    <i class="fa-solid fa-leaf text-accent"></i> Agro<span class="text-tech">Forte</span>
+                </a>
+                <p class="footer-desc">Inovação e sustentabilidade integradas para transformar o agronegócio global.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="#impacto">Impacto</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-socials">
+                <h4>Siga-nos</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AgroForte. Todos os direitos reservados. Cultivando Inovação.</p>
+        </div>
+    </footer>
 
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: var(--color-secondary);
-        }
-
-        .section-subtitle {
-            text-align: center;
-            color: var(--color-text-light);
-            margin-bottom: 4rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        section {
-            padding: 80px 0;
-        }
-
-        /* --- 1. NAVBAR --- */
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            z-index: 1000;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
-            padding: 15px 0;
-            transition: var(--transition);
-        }
-
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-family: var(--font-heading);
-            font-weight: 800;
-            font-size: 1.8rem;
-            color: var(--color-primary);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .logo span { color: var(--color-secondary); }
-
-        .nav-links {
-            display: flex;
-            gap: 30px;
-        }
-
-        .nav-links a {
-            font-weight: 500;
-            color: var(--color-secondary);
-            transition: var(--transition);
-            font-size: 0.95rem;
-        }
-
-        .nav-links a:hover { color: var(--color-primary); }
-
-        .hamburger {
-            display: none;
-            cursor: pointer;
-            flex-direction: column;
-            gap: 6px;
-        }
-
-        .bar {
-            width: 28px;
-            height: 3px;
-            background-color: var(--color-secondary);
-            border-radius: 3px;
-            transition: var(--transition);
-        }
-
-        /* --- 2. HERO SECTION --- */
-        .hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            background: linear-gradient(135deg, rgba(46, 125, 50, 0.05) 0%, rgba(0, 191, 165, 0.1) 100%);
-            position: relative;
-            padding-top: 80px;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0; right: 0;
-            width: 50%;
-            height: 100%;
-            background: url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
-            clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
-            opacity: 0.15;
-        }
-
-        .hero-content {
-            max-width: 650px;
-            z-index: 2;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            font-weight: 800;
-        }
-
-        .hero h1 span { color: var(--color-primary); }
-
-        .hero p {
-            font-size: 1.2rem;
-            color: var(--color-text-light);
-            margin-bottom: 40px;
-            max-width: 500px;
-        }
-
-        /* --- 3. DIFERENCIAIS (CARDS) --- */
-        .cards-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .card {
-            background: var(--color-white);
-            padding: 40px 30px;
-            border-radius: 20px;
-            box-shadow: var(--shadow-card);
-            transition: var(--transition);
-            border-top: 4px solid transparent;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-hover);
-            border-top: 4px solid var(--color-accent);
-        }
-
-        .card-icon {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            display: inline-block;
-            padding: 15px;
-            background: rgba(46, 125, 50, 0.1);
-            border-radius: 50%;
-            color: var(--color-primary);
-        }
-
-        .card h3 { font-size: 1.5rem; margin-bottom: 15px; }
-        .card p { color: var(--color-text-light); }
-
-        /* --- 4. DASHBOARD DE IMPACTO --- */
-        .impact-section {
-            background-color: var(--color-secondary);
-            color: var(--color-white);
-        }
-
-        .impact-section .section-title { color: var(--color-white); }
-        .impact-section .section-subtitle { color: rgba(255,255,255,0.7); }
-
-        .impact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            text-align: center;
-        }
-
-        .impact-item {
-            padding: 20px;
-        }
-
-        .impact-number {
-            font-family: var(--font-heading);
-            font-size: 3.5rem;
-            font-weight: 800;
-            color: var(--color-accent);
-            margin-bottom: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: baseline;
-        }
-
-        .impact-label {
-            font-size: 1.1rem;
-            opacity: 0.9;
-            font-weight: 500;
-        }
-
-        /* --- 5. FORMULÁRIO DE CONTATO --- */
-        .contact-form-container {
-            max-width: 600px;
-            margin: 0 auto;
-            background: var(--color-white);
-            padding: 50px;
-            border-radius: 20px;
-            box-shadow: var(--shadow-card);
-        }
-
-        .form-group {
-            margin-bottom: 25px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            color: var(--color-secondary);
-        }
-
-        .form-control {
-            width: 100%;
-            padding: 14px;
-            border: 2px solid #eee;
-            border-radius: 10px;
-            font-family: var(--font-body);
-            font-size: 1rem;
-            transition: var(--transition);
-            outline: none;
-        }
-
-        .form-control:focus {
-            border-color: var(--color-accent);
-        }
-
-        textarea.form-control {
-            resize: vertical;
-            min-height: 120px;
-        }
-
-        /* --- 6. FOOTER --- */
-        footer {
-            background-color: #263238;
-            color: #fff;
-            padding: 60px 0 20px;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-
-        .footer-col h4 {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-            color: var(--color-accent);
-        }
-
-        .footer-col ul li { margin-bottom: 10px; }
-        .footer-col ul li a {
-            color: #bbb;
-            transition: var(--transition);
-        }
-        .footer-col ul li a:hover { color: var(--color-white); }
-
-        .copyright {
-            text-align: center;
-            border-top: 1px solid #37474F;
-            padding-top: 20px;
-            color: #777;
-            font-size: 0.9rem;
-        }
-
-        /* --- RESPONSIVIDADE --- */
-        @media (max-width: 768px) {
-            .hamburger { display: flex; }
-            
-            .nav-links {
-                position: fixed;
-                top: 70px;
-                left: -100%;
-                width: 100%;
-                height: calc(100vh - 70px);
-                background: var(--color-white);
-                flex-direction: column;
-                padding: 40px;
-                transition: 0.4s ease;
-                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-            }
-
-            .nav-links.active { left: 0; }
-
-            .hero h1 { font-size: 2.5rem; }
-            
-            .hero::before {
-                width: 100%;
-                clip-path
+    <script src="script.js"></script>
+</body>
+</html>
