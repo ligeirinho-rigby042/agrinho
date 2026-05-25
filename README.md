@@ -1,4 +1,4 @@
-# agrinho
+# AGRINHo2026
 PROMPT:
 Atue como um Desenvolvedor Front-end Sênior e UI/UX Designer. Crie o código completo para um site institucional de página única (Single Page Application) responsivo e moderno. 
 
