@@ -1,110 +1,384 @@
-Agr
-</
-Sobre Soluções Projetos Contato
-Junte-se
-Agro Para
-Inovação, preservação e tecnologia para produzir mais com menos impacto.
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroForte | Futuro Sustentável</title>
+    
+    <!-- Google Fonts: Montserrat (Headings) e Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
 
-<section id="sobre" class="container section">
-  <h3>Sobre</h3>
-  <p class="lead">Agro Forte integra conhecimento tradicional com tecnologia de ponta: agricultura de precisão, manejo regenerativo e uso eficiente de recursos.</p>
-  <div class="cards">
-    <article class="card">
-      <h4>Agricultura de precisão</h4>
-      <p>Monitoramento por sensores, análise de dados e decisões localizadas para reduzir insumos e aumentar produtividade.</p>
-    </article>
-    <article class="card">
-      <h4>Manejo regenerativo</h4>
-      <p>Práticas que recuperam solo, aumentam biodiversidade e sequestram carbono.</p>
-    </article>
-    <article class="card">
-      <h4>Energias renováveis</h4>
-      <p>Integração de solar e biogás para reduzir emissão de carbono na produção.</p>
-    </article>
-  </div>
-</section>
+    <style>
+        /* --- CSS MODERNO & VARIÁVEIS --- */
+        :root {
+            --color-primary: #2E7D32;       /* Verde Folha */
+            --color-primary-dark: #1B5E20;
+            --color-secondary: #4E342E;    /* Terra/Escuro */
+            --color-accent: #00BFA5;         /* Azul Tech/Ciano */
+            --color-bg: #F8F9FA;             /* Fundo Cinza Claro */
+            --color-white: #FFFFFF;
+            --color-text: #333333;
+            --color-text-light: #666666;
+            
+            --font-heading: 'Montserrat', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            
+            --shadow-card: 0 10px 30px rgba(0,0,0,0.08);
+            --shadow-hover: 0 15px 40px rgba(0,0,0,0.12);
+            --transition: all 0.3s ease;
+        }
 
-<section id="solucoes" class="section dark">
-  <div class="container">
-    <h3>Soluções</h3>
-    <div class="solutions-grid">
-      <div class="solution">
-        <h4>IoT e Sensoriamento</h4>
-        <p>Sensores de solo e clima informam decisões em tempo real.</p>
-      </div>
-      <div class="solution">
-        <h4>Plataforma de Dados</h4>
-        <p>Acompanhe produtividade, consumo de água e insumos via painel simples.</p>
-      </div>
-      <div class="solution">
-        <h4>Crédito Verde</h4>
-        <p>Financiamento para práticas sustentáveis e rastreabilidade da produção.</p>
-      </div>
-    </div>
+        /* Reset Básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <div class="stats" aria-hidden="true">
-      <div class="stat">
-        <strong id="stat1">0%</strong>
-        <span>Redução média de insumos</span>
-      </div>
-      <div class="stat">
-        <strong id="stat2">0t</strong>
-        <span>CO₂ sequestrado / ano</span>
-      </div>
-      <div class="stat">
-        <strong id="stat3">0%</strong>
-        <span>Economia média de água</span>
-      </div>
-    </div>
-  </div>
-</section>
+        html {
+            scroll-behavior: smooth;
+        }
 
-<section id="projetos" class="container section">
-  <h3>Projetos e Impactos</h3>
-  <div class="projects">
-    <div class="project">
-      <img src="" alt="Foto de campo" class="img-placeholder" />
-      <h4>Projeto Solo Vivo</h4>
-      <p>Recuperação de 5.000 ha com práticas regenerativas e monitoramento remoto.</p>
-    </div>
-    <div class="project">
-      <img src="" alt="Estação solar" class="img-placeholder" />
-      <h4>Usina Rural Solar</h4>
-      <p>Microgeração que abastece equipamentos de irrigação com energia limpa.</p>
-    </div>
-    <div class="project">
-      <img src="" alt="Equipe no campo" class="img-placeholder" />
-      <h4>Capacitação Comunitária</h4>
-      <p>Treinamentos para produtores sobre práticas sustentáveis e economia circular.</p>
-    </div>
-  </div>
-</section>
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text);
+            background-color: var(--color-bg);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
 
-<section class="section subscribe dark" aria-labelledby="newsletter-title">
-  <div class="container subscribe-inner">
-    <div>
-      <h3 id="newsletter-title">Boletim Agro Forte</h3>
-      <p>Receba novidades, dicas práticas e convites para eventos.</p>
-    </div>
-    <form id="newsletter-form" aria-label="Formulário de inscrição">
-      <input type="email" id="email" placeholder="Seu e-mail" required />
-      <button class="btn-primary" type="submit">Inscrever</button>
-    </form>
-  </div>
-</section>
+        h1, h2, h3 {
+            font-family: var(--font-heading);
+            color: var(--color-secondary);
+            line-height: 1.2;
+        }
 
-<section id="contato" class="container section">
-  <h3>Contato</h3>
-  <p>Fale conosco para parcerias e consultoria.</p>
-  <form id="contact-form" class="contact-form" aria-label="Formulário de contato">
-    <div class="form-row">
-      <input type="text" id="nome" placeholder="Nome" required />
-      <input type="email" id="contato-email" placeholder="E-mail" required />
-    </div>
-    <textarea id="mensagem" placeholder="Mensagem" rows="4" required></textarea>
-    <div class="form-row">
-      <button class="btn-primary" type="submit">Enviar</button>
-      <button class="btn-secondary" type="button" id="clear-form">Limpar</button>
-    </div>
-  </form>
-</section>
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        img { max-width: 100%; display: block; }
+
+        /* --- COMPONENTES REUTILIZÁVEIS --- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-family: var(--font-heading);
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--color-accent);
+            color: var(--color-white);
+            box-shadow: 0 4px 15px rgba(0, 191, 165, 0.4);
+        }
+
+        .btn-primary:hover {
+            background-color: #008e76;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 191, 165, 0.6);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-secondary);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--color-text-light);
+            margin-bottom: 4rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        /* --- 1. NAVBAR --- */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            padding: 15px 0;
+            transition: var(--transition);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 1.8rem;
+            color: var(--color-primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span { color: var(--color-secondary); }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            color: var(--color-secondary);
+            transition: var(--transition);
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover { color: var(--color-primary); }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .bar {
+            width: 28px;
+            height: 3px;
+            background-color: var(--color-secondary);
+            border-radius: 3px;
+            transition: var(--transition);
+        }
+
+        /* --- 2. HERO SECTION --- */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, rgba(46, 125, 50, 0.05) 0%, rgba(0, 191, 165, 0.1) 100%);
+            position: relative;
+            padding-top: 80px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; right: 0;
+            width: 50%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+            opacity: 0.15;
+        }
+
+        .hero-content {
+            max-width: 650px;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .hero h1 span { color: var(--color-primary); }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--color-text-light);
+            margin-bottom: 40px;
+            max-width: 500px;
+        }
+
+        /* --- 3. DIFERENCIAIS (CARDS) --- */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--color-white);
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-card);
+            transition: var(--transition);
+            border-top: 4px solid transparent;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+            border-top: 4px solid var(--color-accent);
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            display: inline-block;
+            padding: 15px;
+            background: rgba(46, 125, 50, 0.1);
+            border-radius: 50%;
+            color: var(--color-primary);
+        }
+
+        .card h3 { font-size: 1.5rem; margin-bottom: 15px; }
+        .card p { color: var(--color-text-light); }
+
+        /* --- 4. DASHBOARD DE IMPACTO --- */
+        .impact-section {
+            background-color: var(--color-secondary);
+            color: var(--color-white);
+        }
+
+        .impact-section .section-title { color: var(--color-white); }
+        .impact-section .section-subtitle { color: rgba(255,255,255,0.7); }
+
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .impact-item {
+            padding: 20px;
+        }
+
+        .impact-number {
+            font-family: var(--font-heading);
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--color-accent);
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+        }
+
+        .impact-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+
+        /* --- 5. FORMULÁRIO DE CONTATO --- */
+        .contact-form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--color-white);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-card);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--color-secondary);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #eee;
+            border-radius: 10px;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            transition: var(--transition);
+            outline: none;
+        }
+
+        .form-control:focus {
+            border-color: var(--color-accent);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* --- 6. FOOTER --- */
+        footer {
+            background-color: #263238;
+            color: #fff;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: var(--color-accent);
+        }
+
+        .footer-col ul li { margin-bottom: 10px; }
+        .footer-col ul li a {
+            color: #bbb;
+            transition: var(--transition);
+        }
+        .footer-col ul li a:hover { color: var(--color-white); }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #37474F;
+            padding-top: 20px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        /* --- RESPONSIVIDADE --- */
+        @media (max-width: 768px) {
+            .hamburger { display: flex; }
+            
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: var(--color-white);
+                flex-direction: column;
+                padding: 40px;
+                transition: 0.4s ease;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            }
+
+            .nav-links.active { left: 0; }
+
+            .hero h1 { font-size: 2.5rem; }
+            
+            .hero::before {
+                width: 100%;
+                clip-path
