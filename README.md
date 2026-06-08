@@ -25,4 +25,44 @@ O tema do site é "AgroForte: Futuro Sustentável", focado em agricultura tecnol
   - Uma animação de contador progressivo (números subindo de 0 até o valor final) para a seção "Dashboard de Impacto" assim que o usuário rolar a página até ela.
   - Validação simples do formulário de contato (exibir um alerta de "Mensagem enviada com sucesso" ao submeter).
 
-Por favor, forneça o código limpo, bem comentado e pronto para ser testado no navegador.
+
+### Projeto desenvolvido para o Concurso Agrinho 2026 – Categoria Programação, Subcategoria 3: Programação Front-End.
+
+### Tema do Concurso
+Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente
+
+### Sobre o Projeto
+O site AgroForte apresenta, de forma visual e interativa, como a tecnologia de precisão, o manejo regenerativo e o uso de energia limpa transformam a produção agrícola em Guarapuava. A proposta conecta o campo à cidade por meio de dados, sustentabilidade e inovação, mostrando que é possível aumentar a produtividade enquanto se preserva o meio ambiente.
+
+### Objetivo
+Conscientizar o público sobre a importância de produzir com responsabilidade ambiental, demonstrando que o desenvolvimento econômico e a preservação dos recursos naturais podem caminhar juntos por meio de soluções tecnológicas aplicadas ao agronegócio.
+
+### Funcionalidades do Site (Atualizadas conforme o HTML)
+Página inicial com hero e chamada para ação
+Menu de navegação responsivo com botão hambúrguer
+Seção de Diferenciais com três cards (Tecnologia de Precisão, Manejo Regenerativo, Energia Limpa)
+Dashboard de impacto com contadores animados (45% economia de água, 1200 toneladas de CO₂ reduzidas, 85.000 ha monitorados)
+Formulário de contato funcional com dados reais
+Rodapé com links e redes sociais
+Informações Reais Extraídas do Código
+
+
+### Elemento	Informação Atualizada
+Nome do Projeto	
+AgroForte
+
+Email de Contato	joao.folmer@escola.pr.gov.br
+
+Telefone	+55 (42) 8415-2435
+Ano no Rodapé	2026
+Foco Principal	Tecnologia de precisão + manejo regenerativo + energia limpa
+Métricas de Impacto	45% economia de água, 1.200 t CO₂, 85.000 ha
+Tecnologias e Requisitos Atendidos
+HTML5, CSS3 e JavaScript (sem frameworks)
+Arquivos separados (index.html, style.css, script.js)
+Design responsivo e acessibilidade básica
+
+### Autoria
+Autor: João Augusto Kubliski Folmer
+Escola:CCM Edite Cordeiro Marques
+Município:Turvo – Paraná
