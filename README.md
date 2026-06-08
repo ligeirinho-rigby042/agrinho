@@ -39,11 +39,17 @@ Conscientizar o público sobre a importância de produzir com responsabilidade a
 
 ### Funcionalidades do Site (Atualizadas conforme o HTML)
 Página inicial com hero e chamada para ação
+
 Menu de navegação responsivo com botão hambúrguer
+
 Seção de Diferenciais com três cards (Tecnologia de Precisão, Manejo Regenerativo, Energia Limpa)
+
 Dashboard de impacto com contadores animados (45% economia de água, 1200 toneladas de CO₂ reduzidas, 85.000 ha monitorados)
+
 Formulário de contato funcional com dados reais
+
 Rodapé com links e redes sociais
+
 Informações Reais Extraídas do Código
 
 
@@ -54,15 +60,24 @@ AgroForte
 Email de Contato	joao.folmer@escola.pr.gov.br
 
 Telefone	+55 (42) 8415-2435
+
 Ano no Rodapé	2026
+
 Foco Principal	Tecnologia de precisão + manejo regenerativo + energia limpa
+
 Métricas de Impacto	45% economia de água, 1.200 t CO₂, 85.000 ha
+
 Tecnologias e Requisitos Atendidos
+
 HTML5, CSS3 e JavaScript (sem frameworks)
+
 Arquivos separados (index.html, style.css, script.js)
+
 Design responsivo e acessibilidade básica
 
 ### 👨‍⚖️​Autoria
 Autor: João Augusto Kubliski Folmer
+
 Escola:CCM Edite Cordeiro Marques
+
 Município:Turvo – Paraná
