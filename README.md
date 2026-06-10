@@ -31,12 +31,6 @@ O tema do site é "AgroForte: Futuro Sustentável", focado em agricultura tecnol
 ### ⚖️​Tema do Concurso
 Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente
 
-### Sobre o Projeto
-O site AgroForte apresenta, de forma visual e interativa, como a tecnologia de precisão, o manejo regenerativo e o uso de energia limpa transformam a produção agrícola em Guarapuava. A proposta conecta o campo à cidade por meio de dados, sustentabilidade e inovação, mostrando que é possível aumentar a produtividade enquanto se preserva o meio ambiente.
-
-### 🎯​Objetivo
-Conscientizar o público sobre a importância de produzir com responsabilidade ambiental, demonstrando que o desenvolvimento econômico e a preservação dos recursos naturais podem caminhar juntos por meio de soluções tecnológicas aplicadas ao agronegócio.
-
 ### Funcionalidades do Site (Atualizadas conforme o HTML)
 Página inicial com hero e chamada para ação
 
