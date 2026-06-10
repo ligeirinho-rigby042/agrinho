@@ -1,6 +1,6 @@
 # AGRINHO2026
 
-### AGROFORTE: Inovação Inteligente para uma Agricultura Sustentável
+# AGROFORTE: Inovação Inteligente para uma Agricultura Sustentável
 
 O tema do site é "AgroForte: Futuro Sustentável", focado em agricultura tecnológica, práticas ecológicas e inovação no campo.
 
