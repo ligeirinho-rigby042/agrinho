@@ -1,6 +1,6 @@
 # AGRINHO2026
-PROMPT:
-Atue como um Desenvolvedor Front-end Sênior e UI/UX Designer. Crie o código completo para um site institucional de página única (Single Page Application) responsivo e moderno. 
+
+###AGROFORTE: Inovação Inteligente para uma Agricultura Sustentável
 
 O tema do site é "AgroForte: Futuro Sustentável", focado em agricultura tecnológica, práticas ecológicas e inovação no campo.
 
